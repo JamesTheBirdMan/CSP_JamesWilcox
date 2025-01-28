@@ -1,0 +1,1 @@
+# James Wilcox, Variables Notes
