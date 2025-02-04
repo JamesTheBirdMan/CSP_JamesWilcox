@@ -10,3 +10,7 @@ print(75/5) #division
 print(10**5) #exponents
 print(75//5) #whole number division
 print(51%18) #Modulo/Modulus/MOD
+
+pi = 3.1415926535
+print(round(pi, 4))
+print(f"{pi:.4f}")
