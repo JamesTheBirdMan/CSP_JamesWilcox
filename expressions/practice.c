@@ -15,11 +15,12 @@ int par7_1 = pow(5, 2);
 int par7_2 = pow(2, 2)
 
 int main(void){
-printf("%d\n", par1);
-printf("%d\n", par2);
-printf("%d\n", par3);
-printf("%d\n", par4_1 + par4_2);
-printf("%d\n", -2*(par5_1) + par5_2);
-printf("%d\n", -1*par6_1/5 - par6_2);
+    printf("%d\n", par1);
+    printf("%d\n", par2);
+    printf("%d\n", par3);
+    printf("%d\n", par4_1 + par4_2);
+    printf("%d\n", -2*(par5_1) + par5_2);
+    printf("%d\n", -1*par6_1/5 - par6_2);
+    printf("%d\n", par7_1);
     return 0;
 }
