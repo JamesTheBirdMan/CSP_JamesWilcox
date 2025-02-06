@@ -11,8 +11,8 @@ int par5_1 = (1*4-2/2);
 int par5_2 = (6+2-3);
 int par6_1 = (3-4*7);
 int par6_2 = (-2*24/6);
-int par7_1 = (3*5**2/15);
-int par7_2 = (5-2**2);
+int par7_1 = pow(5, 2);
+int par7_2 = pow(2, 2)
 
 int main(void){
 printf("%d\n", par1);
@@ -21,6 +21,5 @@ printf("%d\n", par3);
 printf("%d\n", par4_1 + par4_2);
 printf("%d\n", -2*(par5_1) + par5_2);
 printf("%d\n", -1*par6_1/5 - par6_2);
-printf("%d\n", par7_1 - par7_2);
     return 0;
 }
