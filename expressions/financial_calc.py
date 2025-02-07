@@ -27,7 +27,7 @@ print("Every month you can spend", spending)
 rentpercent = ((rent/income)*100)
 
 # Calculate percent of utilities (utilities/income)*100 (variable)
-untilitiespercent = ((utilities/income)*100)
+utilitiespercent = ((utilities/income)*100)
 
 # Calculate percent of groceries (groceries/income)*100 (variable)
 groceriespercent = ((groceries/income)*100)
@@ -45,7 +45,7 @@ spendingpercent = ((spending/income)*100)
 print("You spend $", rent, "on rent and that is %", rentpercent , "of your income")
 
 # Tell user category spending amount and percent for utilities("You spend $XX.XX on groceries and that is XX% of your income")
-print("You spend $", utilities, "on utilties and that is %", untilitiespercent, "of your income")
+print("You spend $", utilities, "on utilties and that is %", utilitiespercent, "of your income")
 
 # Tell user category spending amount and percent for groceries("You spend $XX.XX on groceries and that is XX% of your income")
 print("You spend $", groceries, "on groceries and that is %", groceriespercent, "of your income")
