@@ -1,61 +1,51 @@
-// James Wilcox, Financial Calculator C
+// James Wilcox, Financial Calculator
 #include <stdio.h>
 #include <math.h>
 
-char income = input("what is your monthly income\n");
-
-char rent = input("What is your monthly expense for housing?\n");
-
-char utilities = input("What are your monthly expenses for utilities?\n");
-
-char groceries = input("What are your monthly expenses for groceries?\n");
-
-char transportation = input("What are your monthly expenses for transportation?\n");
-
-char savings = income/10;
-
-char spending = income - rent - utilities - groceries - transportation - savings;
-
-char rentpercent = rent/income*100;
-
-char utilitiespercent = utilities/income*100;
-
-char groceriespercent = groceries/income*100;
-
-char transportationpercent = transportation/income*100;
-
-char savingspercent = savings/income*100;
-
-char spendingpercent = spending/income*100;
+float income;
+float rent;
+float utilities;
+float groceries;
+float transportation;
+float savings;
+float spending;
 
 int main(void){
+   printf("Hello, this is a program for calculating your monthly finances\n");
+   float income, rent, utilities, groceries, transportation, savings, spending;
+   float percentrent, percentutilities, percentgroceries, percenttransportation, percentspending;
 
-printf("Hello! This is a program for calculating your budget and finances!");
+   printf("What is your monthly income?\n");
+   scanf("%f", &income);
 
-printf(income);
+   printf("What is your monthly rent?\n");
+   scanf("%f", &rent);
 
-printf(rent);
+   printf("What is your monthly cost of utilities?\n");
+   scanf("%f", &utilities);
 
-printf(utilities);
+   printf("What is your monthly cost of groceries?\n");
+   scanf("%f", &groceries);
 
-printf(groceries);
+   printf("What is your monthly cost of transportation?\n");
+   scanf("%f", &transportation);
 
-printf(transportation);
+   savings = income/10;
+   spending = income-rent-utilities-groceries-transportation;
 
-printf("Every month you save ", savings);
+   percentrent = (rent/income) * 100;
+   percentutilities = (utilities/income) * 100;
+   percentgroceries = (groceries/income) * 100;
+   percenttransportation = (transportation/income) * 100;
+   percentspending = (spending/income) * 100;
 
-printf("Every month you can spend", spending);
+   printf("The amount spent on rent is %.2f and that is %.2f percent of your income\n", rent, percentrent);
+   printf("The amount spent on utilities is %.2f and that is %.2f percent of your income\n", utilities, percentutilities);
+   printf("The amount spent on groceries is %.2f and that is %.2f percent of your income\n", groceries, percentgroceries);
+   printf("The amount spent on transportation is %.2f and that is %.2f percent of your income\n", transportation, percenttransportation);
 
-printf("You spend $", rent, "on rent and that is ", rentpercent , "percent of your income");
+   printf("The money you have left for spending is %.2f, which is %.2f percent of your income\n", spending, percentspending);
 
-printf("You spend $", utilities, "on utilties and that is ", utilitiespercent, "percent of your income");
-
-printf("You spend $", groceries, "on groceries and that is ", groceriespercent, "percent of your income");
-
-printf("You spend $", transportation, "on transportation and that is ", transportationpercent, "of your income");
-
-printf("You spend $", savings, "on savings and that is ", savingspercent, "percent of your income");
-
-printf("You spend $", spending, "on spending and that is ", spendingpercent, "percent of your income");
-    return 0;
+   printf("The amount of money you have saved for future use is %.2f, which is 10 percent of your income\n", savings);
+   return 0;
 }
