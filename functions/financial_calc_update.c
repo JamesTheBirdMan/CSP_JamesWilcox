@@ -1,4 +1,4 @@
-// James Wilcox, Financial Calculator C
+// James Wilcox, Financial Calculator Update C
 #include <stdio.h>
 #include <math.h>
 
@@ -31,7 +31,7 @@ int main(void){
    scanf("%f", &transportation);
 
    savings = income/10;
-   spending = income-rent-utilities-groceries-transportation;
+   spending = income-rent-utilities-groceries-transportation-savings;
 
    percentrent = (rent/income) * 100;
    percentutilities = (utilities/income) * 100;
