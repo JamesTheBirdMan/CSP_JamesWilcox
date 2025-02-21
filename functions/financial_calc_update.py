@@ -13,10 +13,10 @@ groceries = float(input("What are your monthly expenses for groceries?\n"))
 transportation = float(input("What are your monthly expenses for transportation?\n"))
 
 savings = float(income/10)
-print("Every month you save ", savings)
+print("Every month you save $", savings)
 
 spending = income - rent - utilities - groceries - transportation - savings
-print("Every month you can spend", spending)
+print("Every month you can spend $", spending)
 
 info(income, rent, "rent")
 
