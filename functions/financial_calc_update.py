@@ -7,10 +7,13 @@ def info(income, amount, type):
 print("Hello! This is a program for calculating your budget and finances!")
 income =float(input("what is your monthly income?\n"))
 
-rent = float(input("What is your monthly expense for housing?\n"))
-utilities = float(input("What are your monthly expenses for utilities?\n"))
-groceries = float(input("What are your monthly expenses for groceries?\n"))
-transportation = float(input("What are your monthly expenses for transportation?\n"))
+def get_expense(name):  
+    return float(input(f"What are your monthly expenses for {name}?\n"))  
+  
+rent = get_expense("housing")  
+utilities = get_expense("utilities")  
+groceries = get_expense("groceries")  
+transportation = get_expense("transportation")  
 
 savings = float(income/10)
 print("Every month you save $", savings)
