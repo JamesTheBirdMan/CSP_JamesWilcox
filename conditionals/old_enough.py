@@ -5,6 +5,7 @@ canVote = "Incomplete"
 canDrive = "Incomplete"
 canLearn = "Incomplete"
 canSchool = "Incomplete"
+print(age)
 if age >=18:
     canVote = "can"
 else:
