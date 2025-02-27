@@ -1,7 +1,3 @@
-// James Wilcox, Time of Day C
-#include <stdio.h>
-#include <time.h>
-
 int main(void){
     time_t seconds;
 
@@ -18,7 +14,7 @@ int main(void){
     time_t now = time(NULL);
     struct tm * tm_struct = localtime(&now);
     int hour = tm_struct->tm_hour;
-    //printf("%d\n", hour);
+    printf("%d\n", hour);
     if (hour >= 6 && hour <= 11){
    printf("Good Morning!");
     }
