@@ -1,5 +1,6 @@
 # James Wilcox and Cairo Taylor, Text-Based Adventure Game
 import random
+count = 0
 option1 = "Go through the Hamster Tube Slide"
 option2 = "Walk on the Glass Bridge"
 
@@ -15,19 +16,18 @@ def actions(options):
     whichway = input("Which way do you go? (1 or 2)\n")
     print(whichway)
     
-while count <= 25:
-    strong = random.randint(1,2)
-    print("Pick 1 or 2. One panel will make you fall into lava, while the other will allow you to continue.")
-    choiec = input("So, Which do you choose? (1 or 2)")
-    if strong != choiec:
-        
-    else:
-        weak =1
 
-
-actions("option")
-if whichway == 1:
-    print("You")
+if whichway = 2:
+    while count <= 25:
+        strong = random.randint(1,2)
+         print("Pick 1 or 2. One panel will make you fall into lava, while the other will allow you to continue.")
+         print(strong)
+         choice = input("So, Which do you choose? 1 or 2? ")
+         if strong == 1 and choice == 1 or strong == 2 and choice == 2:
+            print("You chose the right pane!\n")
+            count += 1
+            else:
+                print("Oh no! You chose the wrong glass pane! The glass shatters under your feet as you jump on it, resulting in you falling into the lava.\nYou lost!")
+                break
 else:
-    print("Not you")
-
+    print("You slide down the tube.\n It smells like cat pee.")
