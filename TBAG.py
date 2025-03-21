@@ -1,12 +1,15 @@
 # James Wilcox and Cairo Taylor, Text-Based Adventure Game
 import random
 count = 0
+imbo = 0
 option1 = "Go through the Hamster Tube Slide"
 option2 = "Walk on the Glass Bridge"
 
-print("...\n.....\nAfter waking up, you feel a little pad under you. Curious, you want to check around. After a moment of looking around, you notice you are in a giant bird cage, hanging above a lake of lava.\n") # By Cairo
-print("You can also see a slide made out of giant hamster tubes that spirals down into the darkness beneath the lava.")
-print("You can see the glass bridge from Squid Game...\n It seems to go on forever!")
+while imbo < 0:
+    print("...\n.....\nAfter waking up, you feel a little pad under you. Curious, you want to check around. After a moment of looking around, you notice you are in a giant bird cage, hanging above a lake of lava.\n") # By Cairo
+    print("You can also see a slide made out of giant hamster tubes that spirals down into the darkness beneath the lava.")
+    print("You can see the glass bridge from Squid Game...\n It seems to go on forever!")
+    1mbo +=1
 
 def actions(options):
     whichway = 0
@@ -17,7 +20,7 @@ def actions(options):
     print(whichway)
     
 
-if whichway = 2:
+if whichway == 2:
     while count <= 25:
         strong = random.randint(1,2)
          print("Pick 1 or 2. One panel will make you fall into lava, while the other will allow you to continue.")
