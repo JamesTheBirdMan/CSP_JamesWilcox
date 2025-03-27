@@ -9,8 +9,9 @@ def battle(creature, action, location1, location2):                   #written b
    else:
        defense = random.randint(1,5)
    if defense == move:
-       print(f"The {creature} Dodged your attack!")
+       print(f"The {creature} dodged your attack!")
        print(dedend)
+       exit()
    else:
        print(f"You surprised the {creature} and it fled!")
 
@@ -18,7 +19,8 @@ def battle(creature, action, location1, location2):                   #written b
 def split(choice1, choice2):                   #written by cairo, this code is the base decision making system
   print(f"You see 2 pathways that you could take. Do you want to: \n1. {choice1},\nOR\n2. {choice2}?")
 
-
+sewerdweller = "You live in the sewer until the last of your days. This is a hidden ending!"
+dungeondweller = "You live in the dungeon until the last of your days. This is a hidden ending!"
 befriend = "You managed to befriend the bird! You managed to get the best ending and you now have a forever friend."                  #these are all the different endings, collaborated by both james and cairo
 sneakend = "You manage to sneak to the surface world and not get eaten. Congratulations! However, that bird could have been friendly! You got the default ending."
 dedend = """You failed to escape! You got the worst ending.
@@ -130,7 +132,7 @@ if frstchoice == 1:
                   else:
                     print("You decide that you want to befriend the Dragon Bird!")
                     friends = input("How will you go about doing that?(Only the action)\n")
-                    print(f"You decide that you will {friends} to befriend the bird! At first the Dragon Bird is unsure, but it ends up being friends with you!")
+                    print(f"You decide that by {friends}, you will befriend the bird! At first the Dragon Bird is unsure, but it ends up being friends with you!")
                     print(befriend)
                     
               else:      #these next 31 lines were written by james
@@ -141,7 +143,7 @@ if frstchoice == 1:
                       print("You decide that this entity will be anything but friendly, and that solving the puzzle will be best for you.")
                       puzzle2 = "Yes"
                       while puzzle2 == "Yes":
-                       result = input("I am something people either celebrate or resist. I change people’s thoughts and lives. I am obvious to some people but, to others, I am a mystery. What am I?\n").capitalize()
+                       result = input("I am something people either celebrate or resist. I change people's thoughts and lives. I am obvious to some people but, to others, I am a mystery. What am I?\n").capitalize()
                        if result == "Age":
                            puzzle2 = 0
                            print("The door opens.")
@@ -150,10 +152,16 @@ if frstchoice == 1:
                            print(f"That is incorrect.")
                       print("You feel like something is lurking behind you...")
                       hatman = battle("Hat Man", "swing", "Head", "legs")
-                      print("You feel the ground shaking")
-                      fifthchoice = split("Stay in cover where you are","Try to run and escape")
-                      
-                     
+                      print("You feel the ground shaking. A chunk of the wall breaks out, revealing an exit.")
+                      fifthchoice = split("Stay in cover where you are", "Try to run and escape")
+                      ffthpick = int(input("1 or 2:\n"))
+                      if ffthpick == 1:
+                        print("You decide that if you go out, a chunk of this place will fall on your head. You wait in the grate until the shaking stops.\nYou try to open the grate door, but something fell on it, making it to oheavy to open.")
+                        print(dedend)
+                      else:
+                        print("You decide to run run out of the hole that just broke in the wall.")
+                        print(sneakend)
+                         
                   else:
                       print("You decide that this entity is not intelligent enough to find you in the grate and will pass overhead.\nSuddenly, you see the creature to be a very tall and lanky shadow figure with luminous red eyes. It wraps its arm tentacles around you and you start to choke.")
                       choke = random.randint(1,10)
@@ -187,15 +195,28 @@ if frstchoice == 1:
                 print("You now have a block!")
               else:
                 print("You leave the block behind.")
-                print("A door with a puzzle stands iront of you.")
-                lastpick = split("Complete the puzzle","Find a puzzle-free way")
-                lstpick = int(input("1 or 2:\n"))
-                if lstpick == 1:
-                    print("You decide that you want to do the puzzle.")
-                    code = input("")
-
-                else:
-                   print("")
+              print("A door with a puzzle stands in front of you.")
+              lastpick = split("Complete the puzzle","Find a puzzle-free way")
+              lstpick = int(input("1 or 2:\n"))
+              if lstpick == 1:
+                  print("You decide that you want to do the puzzle.")
+                  code = input("What is %̴̨̡̰̫̘̗͓̣͚̺̲̈́̎̊̽̐͑͂̿͗̇̒̄̐͐͂͗̿͑͛̃̒̽͠@̶̧̖̘̭̲͎͓͈̯̲̰̘̟͐͊̉̂́͒̀̾́̉̑̿̆̆͛͊̓̇͆̈́̄̉́̎̑̄͆̈́̈̂͂̓̈́̇̓͘̕͘̚̚̚̕͝͠͠ͅ$̵̢̡̧̡̡͕͓͖̤͚͙̦͎͇̗̼̯̣̟̥̼̪͎͔͍͉̞͔̫̟̘̱̙̯̮̭͖̘̦̲͕͍͈̿̐̊̏̎͂̂̿̇̑̒̅̐͋͂̒̈͘͜͜͝ͅͅ#̷̡̡̞̼̲͙̥̳̩̦̮͕̻͙̳͈͍̪̮̞̃̉͆͑̈́̾̈̽͐͒̃̆͋̉̐́̏̒͛͗̆̅̈́̽̐͋̓͐̌͌͋̈́̈́̅̄̓̓̋͊͑̿̚̚͘̚̕̚ͅ  + (̵̨͖͔̟̱͔͉̣͉̠̘̪̉͋̿̐̈́͂̽̅̾́͋̏͂̒͂̉̈́̄̋̓͗̆͐̆̔̏̿͑̿̕͘͝͝*̸̧̡̢̧̳̺̟̬̬͙̯͚͇̦̞̭͓̻̪̼̭̝͔̓̂̓̽̃̽́̿͜͜͠#̷̢͍̘͎̯͈̳̳̳̼̫̲̋̇̅͗̎̄̔͆͒̌̓̆̔̓͂̔̆̈́̑̅̔̌͌͌̕͝͠͝&̵̨̨̢̛̛͔͎͔͍̜̝̩͈̱̼̬̳̠̤̱̙͔̰͎̣͚̫͔̭̹͓̳̥͉̻̱͙̼̜̥͇̘̠̣͓͖͎̜̗̼̺̈̅̄͌̌̀͒͐̎̊́͐̆͑͊̅̈̃̒͌͆̀̎̒̐͛͊̕͘̕͜͠͝͝%̷̢̢̧̡̧̛̛̜̳͎̻̼̜̬͈̯͖̗̱̱͚̖͎̩̖͖̥̹̲̦̘̝̜͕̱̠͖̘͚̠̜̜͎̮̿̍̌̓͒̐̈́̒̐̃̌̽̍̍̔͗̓̌̑͌̅̆̂͘͘͜͝͝ͅͅͅ\n").capitalize()
+                  if code == "No":
+                      print("You are correct, this is not a thing. A door opens up to the surface world.")
+                      print(sneakend)
+                  elif code == "Yes":
+                      print("Your skill is beyond power if that means anything to you. You never open the door, and end up living in the dungeon.")
+                      print(dungeondweller)
+                  else:
+                      print("That's incorrect!")
+                      print(dedend)  
+              else:
+                 print("You decide that a puzzle takes up too much energy.")
+                 print("You notice a lever in the middle of the floor.")
+                 lsa = input("Do you pull it?\n").capitalize()
+                 if lsa == "Yes":
+                    print("The floor starts opening up in the middle. You try to pull the lever back, but the lever snaps. You fall into the lava")
+                    print(dedend)
              
           else:            # these 17 lines were written by james
               print("You decide to continue past them, and run past all the cells. After a few minutes of running, you find yourself exhausted. You also observe that you made it onto a bridge above the lava.")
@@ -205,9 +226,16 @@ if frstchoice == 1:
           else:
            giantbird = battle("Dragon Bird", "throw a seed", "Head", "Wings")
           print("You've scared it off for now, but you have a feeling it'll return.")
-
-
-
+          print("The bridge you are standing on starts to collapse.")
+          finaldesicion = split("Try to run to the clear exit of the bridge", "Go back into the dungeon")
+          fnaldesicion = int(input("1 or 2:\n"))
+          if fnaldesicion == 1:
+            print("You run across the falling bridge as fast as you can. Just before the last brick falls, you leap onto the ground of the exit.")
+            print(sneakend)
+          else:
+             print("You leap back onto the safe(ish) dungeon ground just before the bridge completely collapses. The Dragon Bird returns!\nIt grabs you by its talons and flies over the lava and drops you in.")
+             print(dedend)
+                
       else:
           print("Deciding that it might be dangerous to check out what is in the cells, you run past all the cells.\nAfter a few minutes of running, you find yourself exhausted. You also observe that you made it onto a bridge above the lava.")
           print("Something flaps above you...")
@@ -215,9 +243,11 @@ if frstchoice == 1:
            giantbird = battle("Dragon Bird", "fire a seed", "Head", "Wings")
           else:
            giantbird = battle("Dragon Bird", "throw a seed", "Head", "Wings")
+          print("You jump over into a sewer grate to hide from the bird possibly coming back.")
+          print("You never make it out, but you start living in the sewer, forgetting to find a way out.")
+          print(sewerdweller)
 
-
-else:              This last bit was written by cairo
+else:              #This last bit was written by cairo
   print("You decide to go on the glass bridge.")
   count = 0
   while count != 26:
