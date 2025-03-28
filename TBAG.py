@@ -94,7 +94,7 @@ X**X%*X*****X*%%%%XX%*=XXXX**********++++++***+++++++++*+-.......
 X*XX*********XXXX%%%*+XX**+*****+++++++**+++++++****+++*=........                                                                                                              
 XX*XXXX**X%%XXXXX%%X+XXXXX*******+++++++++++*******++*+=........."""
 
-
+print("You wake up in a large bird cage over lava")
 firstpick = split("Go down hamster tube slide", "Jump across the glass bridge(1 in 33554432 success)")                        #this code forms the main structure/plot of the game and was a collaboration between james and cairo
 frstchoice = int(input("1 or 2:\n"))
 if frstchoice == 1:
@@ -200,7 +200,7 @@ if frstchoice == 1:
               lstpick = int(input("1 or 2:\n"))
               if lstpick == 1:
                   print("You decide that you want to do the puzzle.")
-                  code = input("What is %̴̨̡̰̫̘̗͓̣͚̺̲̈́̎̊̽̐͑͂̿͗̇̒̄̐͐͂͗̿͑͛̃̒̽͠@̶̧̖̘̭̲͎͓͈̯̲̰̘̟͐͊̉̂́͒̀̾́̉̑̿̆̆͛͊̓̇͆̈́̄̉́̎̑̄͆̈́̈̂͂̓̈́̇̓͘̕͘̚̚̚̕͝͠͠ͅ$̵̢̡̧̡̡͕͓͖̤͚͙̦͎͇̗̼̯̣̟̥̼̪͎͔͍͉̞͔̫̟̘̱̙̯̮̭͖̘̦̲͕͍͈̿̐̊̏̎͂̂̿̇̑̒̅̐͋͂̒̈͘͜͜͝ͅͅ#̷̡̡̞̼̲͙̥̳̩̦̮͕̻͙̳͈͍̪̮̞̃̉͆͑̈́̾̈̽͐͒̃̆͋̉̐́̏̒͛͗̆̅̈́̽̐͋̓͐̌͌͋̈́̈́̅̄̓̓̋͊͑̿̚̚͘̚̕̚ͅ  + (̵̨͖͔̟̱͔͉̣͉̠̘̪̉͋̿̐̈́͂̽̅̾́͋̏͂̒͂̉̈́̄̋̓͗̆͐̆̔̏̿͑̿̕͘͝͝*̸̧̡̢̧̳̺̟̬̬͙̯͚͇̦̞̭͓̻̪̼̭̝͔̓̂̓̽̃̽́̿͜͜͠#̷̢͍̘͎̯͈̳̳̳̼̫̲̋̇̅͗̎̄̔͆͒̌̓̆̔̓͂̔̆̈́̑̅̔̌͌͌̕͝͠͝&̵̨̨̢̛̛͔͎͔͍̜̝̩͈̱̼̬̳̠̤̱̙͔̰͎̣͚̫͔̭̹͓̳̥͉̻̱͙̼̜̥͇̘̠̣͓͖͎̜̗̼̺̈̅̄͌̌̀͒͐̎̊́͐̆͑͊̅̈̃̒͌͆̀̎̒̐͛͊̕͘̕͜͠͝͝%̷̢̢̧̡̧̛̛̜̳͎̻̼̜̬͈̯͖̗̱̱͚̖͎̩̖͖̥̹̲̦̘̝̜͕̱̠͖̘͚̠̜̜͎̮̿̍̌̓͒̐̈́̒̐̃̌̽̍̍̔͗̓̌̑͌̅̆̂͘͘͜͝͝ͅͅͅ\n").capitalize()
+                  code = input("What is %@$#  + (*#&%\n").capitalize()
                   if code == "No":
                       print("You are correct, this is not a thing. A door opens up to the surface world.")
                       print(sneakend)
