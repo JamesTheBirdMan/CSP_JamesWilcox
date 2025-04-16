@@ -1,8 +1,25 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>CSS Basic Notes</title>
         <meta charset="UTF-8">
-        <title>Something I LOVE</title>
+        <!--embedded style sheet-->
+        <style>
+            /*Selector is how you tell the CSS what to change*/
+            li{
+                color:coral;
+            }
+            #birdbird{
+                color:blue;
+                font-size: 20px;
+            }
+            .intro{
+                color:red;
+            }
+            img{
+                height: 200px;
+            }
+        </style>
     </head>
     <body>
         <h1>Very Good Parrots</h1>
@@ -10,11 +27,11 @@
         <p>
             Large parrots include the following:</p> 
             <ul>
-                <li>Amazons</li>
+                <li id="birdbird">Amazons</li>
                 <li>Cockatoos</li>
                 <li>Macaws</li>
                 <li>The Famously Intelligent African Grey</li>
-            </ul>.<p> All of these can be trained to associate certain combinations of sounds (like words!) with concepts they understand, like 'sleep' or 'food'. However, the bigger the animal, the bigger the space you need to care for it properly and ensure it has a happy life. This is doubly so for birds, as they are used to having large open spaces where they can exhaust their energy as they fly around.</p>
+            </ul>.<p class="intro"> All of these can be trained to associate certain combinations of sounds (aka words!) with concepts they understand, like 'sleep' or 'food'. However, the bigger the animal, the bigger the space you need to care for it properly and ensure it has a happy life. This is doubly so for birds, as they are used to having large open spaces where they can exhaust their energy as they fly around.</p>
         
         <h2>Small Parrots</h2>
         <p>
@@ -29,8 +46,8 @@
         <p>
             Almost all of these smaller birds are more cuddly and loving towards their human when compared to the larger birds. Parrots are the most varied animal genus in terms of length. In these next two pictures, you can see that a juvenile Hyacinth Macaw is larger than the average fully grown budgerigar.
         </p>
-        <img src="https://myparrot.com/wp-content/uploads/2023/09/Baby-Blue-and-Gold-9.8.23-1024x770.jpg" height="200px">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAdPytbtZN2W8fuE5QQaqDV6LFyOkiXDu_0Q&s" height="200px">
-        <img src="https://m.media-amazon.com/images/I/71AHKls17sL.jpg" height="200px">
+        <img src="https://myparrot.com/wp-content/uploads/2023/09/Baby-Blue-and-Gold-9.8.23-1024x770.jpg" >
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAdPytbtZN2W8fuE5QQaqDV6LFyOkiXDu_0Q&s" >
+        <img src="https://m.media-amazon.com/images/I/71AHKls17sL.jpg" >
     </body>
 </html>

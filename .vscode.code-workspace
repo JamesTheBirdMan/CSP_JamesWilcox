@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": ".vscode"
+		},
+		{
+			"path": "conditionals"
+		},
+		{
+			"path": "expressions"
+		},
+		{
+			"path": "functions"
+		},
+		{
+			"path": "html basics"
+		},
+		{
+			"path": "images"
+		},
+		{
+			"path": "loops"
+		},
+		{
+			"path": "strings"
+		},
+		{
+			"path": "Variables"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html basics"
+	}
+}
