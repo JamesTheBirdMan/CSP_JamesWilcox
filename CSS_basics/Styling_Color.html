@@ -1,21 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Styling With Color</title>
         <meta charset="UTF-8">
-        
+        <title>Styling With Color</title>
+        <style>
+            #title{
+                text-align: center;
+            }
+            #complementary{
+                height: 5em;
+                width: 15em;
+                background-color: #ffffff;
+                text-align: center;
+                color: #D603FC;
+                border: 3px solid #29FC03;
+            }
+            #analogous{
+                height: 5em;
+                width: 15em;
+                background-color: #9333CC;
+                text-align: center;
+                color: #CC33B8;
+                border: 3px solid #4733CC;
+            }
+            #triadic{
+                height: 5em;
+                width: 15em;
+                background-color: #ff0600;
+                text-align: center;
+                color: #00FF06;
+                border: 3px solid #0600FF;
+            }
         </style>
     </head>
     <body>
-        <div id="analogous">
-            <p>Analogous: Colors next to each other on the color wheel (e.g., green, yellow-green, and yellow)</p>
-        </div>
+        <h1 id="title">Color Theory</h1>
         <div id="complementary">
-            <p>Complementary: Colors opposite each other on the color wheel (e.g., blue and orange)</p>
+            <p>Complementary: colors opposite from each other on the color wheel</p>
         </div>
+        <br>
+        <div id="analogous">
+            <p>Analogous: colors next to each other on the color wheel</p>
+        </div>
+        <br>
         <div id="triadic">
-            <p>Triadic :Three colors evenly spaced around the color wheel (e.g., red, blue, and yellow)</p>
+            <p>Triadic: colors that are evenly spaced across the color wheel</p>
         </div>
     </body>
-        
 </html>
