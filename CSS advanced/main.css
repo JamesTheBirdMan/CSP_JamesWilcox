@@ -1,0 +1,19 @@
+*{
+    background-color:blanchedalmond;
+    font-family: "Metal Mania", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+      }
+p{
+    background-color: :aqua;
+    border-radius: 5px;
+    padding:3px;
+    margin:10px;
+}
+/* Generic Font Families
+1. Serif
+2. Sans Serif
+3. Monospace
+4. Cursive
+5. Fantasy */
