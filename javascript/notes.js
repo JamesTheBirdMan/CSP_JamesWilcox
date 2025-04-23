@@ -23,5 +23,9 @@ function normal(){
 }
 
 function show(){
-    duocument.getElementById("hidden").style.display = "block"
+    document.getElementById("hidden").style.display = "block"
+}
+
+function pop(){
+    window.alert("For real. Don't click this!")
 }
