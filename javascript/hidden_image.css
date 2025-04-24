@@ -3,7 +3,8 @@
 }
 #kakapic{
     height:400px;
+    visibility: hidden;
 }
 #hidden{
-    font-size: 400px;
+    font-size: 200px;
 }
