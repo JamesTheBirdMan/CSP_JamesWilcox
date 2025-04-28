@@ -1,72 +1,72 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgba(128, 128, 128);
+    background-color: #f0f0f0; /* Changed background color */
+    color: #333; /* Changed text color */
 }
 
 header {
-    background-color: #8B0000;
+    background-color: #c2191f; /* Changed header background color */
     color: white;
     padding: 20px;
     text-align: center;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    text-align: center;
 }
 
 .park-image {
-    width: 600px;
+    width: 100%;
+    max-width: 800px;
     height: auto;
     border-radius: 10px;
-    max-width: 800px;
 }
 
 .description {
-    background-color: #8B8B8B;
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
+    width: 90%;
 }
 
 button {
-    background-color: #8B0000;
+    background-color: #c2191f;
+    width: auto;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px;
+}
+
+.butin{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 button:hover {
-    background-color: #C00000;
+    background-color: #ab161a;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #8B0000;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+.additional-image {
+    height: 200px;
+    margin: 10px;
+    transition: transform .3s;
 }
 
-#extinfo{
-    visibility: hidden;
-}
-
-#invtxt{
-    color: #8B8B8B;
-}
-
-#secimage{
-    width: 300px;
-    height: 180px;
+.additional-image:hover{
+    transform: scale(1.1); 
 }
 
 #lesbtn{
-    display: none;
+    visibility: hidden;
 }
