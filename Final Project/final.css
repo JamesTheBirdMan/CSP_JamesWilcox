@@ -1,5 +1,5 @@
 body{
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif, Georgia;
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
@@ -20,15 +20,20 @@ main{
     padding: 20px;
 }
 
-.park-image{
+#park-img{
     width: 100%;
     max-width: 800px;
     height: auto;
     border-radius: 10px;
 }
 
-.park-image:hover{
-    cursor: pointer;
+#altpark-img{
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 10px;
+    visibility: hidden;
+    display: none;
 }
 
 .description{

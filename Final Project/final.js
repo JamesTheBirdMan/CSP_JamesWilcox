@@ -11,6 +11,16 @@ function hide(){
     document.getElementById("lesbtn").style.display = "none";
 }
 
-function link(){
-    window.open("https://bit.ly/4jW5zfd")
+function swap1(){
+    document.getElementById("altpark-img").style.visibility = "visible";
+    document.getElementById("altpark-img").style.display = "inline";
+    document.getElementById("park-img").style.visibility = "hidden";
+    document.getElementById("park-img").style.display = "none";
+}
+
+function swap2(){
+    document.getElementById("altpark-img").style.visibility = "hidden";
+    document.getElementById("altpark-img").style.display = "none";
+    document.getElementById("park-img").style.visibility = "visible";
+    document.getElementById("park-img").style.display = "inline";
 }

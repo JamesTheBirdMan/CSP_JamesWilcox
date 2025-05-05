@@ -15,12 +15,13 @@
    
     <main>
         <div class="intro">
-            <img src="https://visitfourcorners.com/wp-content/uploads/2024/01/Arches-National-Park-A-1024x572.webp" class="park-image" onclick="link()">
+            <img src="https://visitfourcorners.com/wp-content/uploads/2024/01/Arches-National-Park-A-1024x572.webp" id="park-img" onmouseenter="swap1()">
+            <img src="https://visitfourcorners.com/wp-content/uploads/2023/12/Grand-Circle-A-1024x572.webp" id="altpark-img" onmouseleave="swap2()">
         </div>
        
         <div class="description">
             <h2>Discover the Wonders of Arches National Park</h2>
-            <p>Arches National Park, located in eastern Utah, is a geological wonder known for its stunning sandstone formations, including over 2,000 natural arches. The park's unique landscape offers breathtaking views and diverse wildlife, making it a must-visit destination for nature lovers and adventurers alike. Visitors can enjoy a variety of activities such as hiking, rock climbing, and photography against a stunning backdrop of vibrant sunsets and starry nights.</p>
+            <p>Arches National Park, located in eastern Utah, is a geological wonder known for its stunning sandstone formations, including over 2,000 natural arches. The park's unique landscape offers breathtaking views and rare but diverse wildlife, making it a must-visit destination for nature lovers and adventurers alike. Visitors can enjoy a variety of activities such as hiking, rock climbing, and photography against a stunning backdrop of vibrant sunsets and starry nights.</p>
            
             <h3>Why You Should Visit:</h3>
             <ul>
@@ -33,7 +34,7 @@
             <button id="infbtn" class="btn" onclick="show()">↓ Show More Information ↓</button>
             <button id="lesbtn" class="btn" onclick="hide()">↑ Show Less Information ↑</button>
             <br><br>
-            <div id="extinfo" style="display: none;">
+            <div id="extinfo" style="display: none;"> 
                 <p>Arches National Park is open year-round, allowing visitors to explore its unique rock formations and beautiful trails at almost any time. The park is well-known for its clear night skies, offering perfect conditions for stargazing. Don't miss the opportunity to hike to the Delicate Arch at sunset for a truly unforgettable experience!</p>
                 <div class="grid1">
                     <div><img src="https://www.nps.gov/common/uploads/grid_builder/arch/crop16_9/8E09FEF8-1DD8-B71B-0BB792C19048545A.jpg?width=640&quality=90&mode=crop" class="add-img1"></div>
